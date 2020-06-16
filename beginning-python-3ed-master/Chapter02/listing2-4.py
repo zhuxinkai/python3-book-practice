@@ -10,4 +10,7 @@ database = [
 username = input('User name: ')
 pin = input('PIN code: ')
 
-if [username, pin] in database: print('Access granted')
+if [username, pin] in database:
+    print('Access granted')
+else:
+    print('Don\'t have granted')
