@@ -43,3 +43,26 @@ print(s.filter(['SPAM','age','name','hello','SPAM','YOU KNOW THE TRUE','LOVE','S
 
 
 print(issubclass(mySelf_Filter,Filter))
+
+
+print('------------------------------------------------------------')
+print("对象，子类的一些内置的函数判断")
+
+print(issubclass(SPAMFilter,Filter))
+print(issubclass(mySelf_Filter,Filter))
+
+# “在面向对象设计中，被定义为包含所有实体共性的class类型，被称为“基类”。
+
+print("一个类如果想知道他的基类，可访问其特殊属性__bases__")
+print(Filter.__bases__)
+print(SPAMFilter.__bases__)
+
+print('----------------------------------------')
+print("判断对象是否是特定类的实例，可使用isinstance()")
+print(isinstance(s,Filter))
+print(isinstance(s,SPAMFilter))
+print(isinstance(s,mySelf_Filter))
+print('----------------------------------------')
+# 如果你要获悉对象属于哪个类，可使用属性 __class__
+print("# 如果你要获悉对象属于哪个类，可使用属性 __class__")
+print(s.__class__)
